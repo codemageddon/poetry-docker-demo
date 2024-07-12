@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "poetry-docker-demo"
+version = "0.1.0"
+description = "Poetry docker demo for codemageddon.me blog"
+authors = ["Codemageddon <github@codemageddon.me>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+click = "^8.1.7"
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.5.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
