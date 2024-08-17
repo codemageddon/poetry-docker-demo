@@ -163,3 +163,4 @@ cython_debug/
 
 benchmark.sh
 *.code-workspace
+results.csv
