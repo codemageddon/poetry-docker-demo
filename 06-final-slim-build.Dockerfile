@@ -1,4 +1,4 @@
-FROM python:3.12-bookworm AS build
+FROM python:3.12-slim-bookworm AS build
 RUN pip install poetry==1.8.3
 WORKDIR /usr/src/app
 ENV POETRY_VIRTUALENVS_CREATE=true \

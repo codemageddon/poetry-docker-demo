@@ -9,7 +9,7 @@ RUN poetry install --no-root --only main
 FROM python:3.12-slim-bookworm AS runtime
 ENV PATH="/usr/src/app/.venv/bin:${PATH}"
 COPY --from=build /usr/src/app /usr/src/app
-RUN useradd -g nogroup -M app
+RUN useradd -U -M -d /nonexistent app
 USER app
 WORKDIR /usr/src/app
 ENTRYPOINT ["python", "hello_world/main.py"]
